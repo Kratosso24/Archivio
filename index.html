@@ -1238,13 +1238,59 @@ function App() {
   };
   const removeEntry = id => updateCategory(activeTab, list => list.filter(it => it.id !== id));
   const list = entries[activeTab] || [];
-  const filtered = useMemo(() => {
-    return list.filter(it => statusFilter === "Tutti" ? true : it.status === statusFilter).filter(it => {
-      if (!search.trim()) return true;
-      const q = search.toLowerCase();
-      return it.title.toLowerCase().includes(q) || (it.creator || "").toLowerCase().includes(q) || (it.notes || "").toLowerCase().includes(q);
+
+  // Group entries by status (già fatto / in corso / da fare), each with its own
+  // stable code (prefix + group number + sequence), based on the FULL category
+  // list so codes don't shift when searching or filtering.
+  const allGroups = useMemo(() => {
+    const semanticOrder = [{
+      status: cat.statuses[2],
+      suffix: 1
+    },
+    // già ascoltato/visto/letto
+    {
+      status: cat.statuses[1],
+      suffix: 2
+    },
+    // in corso
+    {
+      status: cat.statuses[0],
+      suffix: 3
+    } // da fare
+    ];
+    return semanticOrder.map(({
+      status,
+      suffix
+    }) => {
+      const items = list.filter(it => (it.status || cat.statuses[0]) === status);
+      const withKey = items.map(it => ({
+        it,
+        key: it.date ? new Date(it.date).getTime() || 0 : it.createdAt || 0
+      }));
+      const ascending = [...withKey].sort((a, b) => a.key - b.key);
+      const codeMap = new Map();
+      ascending.forEach((entry, idx) => {
+        codeMap.set(entry.it.id, `${cat.prefix}${suffix} - ${String(idx + 1).padStart(3, "0")}`);
+      });
+      const descending = [...withKey].sort((a, b) => b.key - a.key).map(e => e.it);
+      return {
+        status,
+        items: descending,
+        codeMap
+      };
     });
-  }, [list, statusFilter, search]);
+  }, [list, cat]);
+  const visibleGroups = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    return allGroups.filter(g => statusFilter === "Tutti" || g.status === statusFilter).map(g => ({
+      ...g,
+      items: g.items.filter(it => {
+        if (!q) return true;
+        return it.title.toLowerCase().includes(q) || (it.creator || "").toLowerCase().includes(q) || (it.notes || "").toLowerCase().includes(q);
+      })
+    })).filter(g => g.items.length > 0);
+  }, [allGroups, statusFilter, search]);
+  const totalVisible = visibleGroups.reduce((sum, g) => sum + g.items.length, 0);
   const totalAll = CATEGORIES.reduce((sum, c) => sum + (entries[c.key]?.length || 0), 0);
   return /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1459,7 +1505,7 @@ function App() {
       maxWidth: "1000px",
       margin: "0 auto"
     }
-  }, filtered.length === 0 ? /*#__PURE__*/React.createElement("div", {
+  }, totalVisible === 0 ? /*#__PURE__*/React.createElement("div", {
     style: {
       textAlign: "center",
       padding: "64px 0",
@@ -1480,13 +1526,46 @@ function App() {
     style: {
       fontSize: "14px"
     }
-  }, list.length === 0 ? 'Aggiungi la prima con "Nuova scheda".' : "Prova a cambiare filtro o ricerca.")) : /*#__PURE__*/React.createElement("div", {
+  }, list.length === 0 ? 'Aggiungi la prima con "Nuova scheda".' : "Prova a cambiare filtro o ricerca.")) : visibleGroups.map((group, gIdx) => /*#__PURE__*/React.createElement("div", {
+    key: group.status,
+    style: {
+      marginTop: gIdx === 0 ? 0 : "32px"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      marginBottom: "14px"
+    }
+  }, /*#__PURE__*/React.createElement("h3", {
+    style: {
+      fontFamily: "'Fraunces', serif",
+      fontWeight: 600,
+      fontSize: "1.05rem",
+      color: cat.accent,
+      margin: 0,
+      whiteSpace: "nowrap"
+    }
+  }, group.status), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: "11px",
+      fontFamily: "'JetBrains Mono', monospace",
+      color: C.inkSoft
+    }
+  }, group.items.length), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      height: "1px",
+      background: C.line
+    }
+  })), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "grid",
       gap: "16px",
       gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))"
     }
-  }, filtered.map(it => /*#__PURE__*/React.createElement("article", {
+  }, group.items.map(it => /*#__PURE__*/React.createElement("article", {
     key: it.id,
     style: {
       position: "relative",
@@ -1526,7 +1605,7 @@ function App() {
       fontFamily: "'JetBrains Mono', monospace",
       color: C.inkSoft
     }
-  }, cat.prefix, "-", String(list.length - list.findIndex(x => x.id === it.id)).padStart(3, "0")), /*#__PURE__*/React.createElement("div", {
+  }, group.codeMap.get(it.id)), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       gap: "4px"
@@ -1619,7 +1698,7 @@ function App() {
       color: C.ink,
       whiteSpace: "pre-wrap"
     }
-  }, it.notes)))))), formOpen && /*#__PURE__*/React.createElement(EntryFormSheet, {
+  }, it.notes)))))))), formOpen && /*#__PURE__*/React.createElement(EntryFormSheet, {
     key: editingId || "new",
     cat: cat,
     initial: form,
