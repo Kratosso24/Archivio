@@ -1,9 +1,24 @@
 {
-  "exportedAt": "2026-07-28T22:32:01.239Z",
+  "exportedAt": "2026-07-28T22:33:09.685Z",
   "entries": {
     "musica": [],
     "film": [],
     "fumetti": [
+      {
+        "title": "Batman: L'uomo che ride",
+        "creator": "Ed Brubaker, Doug Mahnke",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "2005",
+        "status": "Da leggere",
+        "rating": 0,
+        "progress": "",
+        "date": "",
+        "notes": "",
+        "image": "",
+        "id": "1c7i0eovms58dl4b",
+        "createdAt": 1785277917227
+      },
       {
         "title": "Batman: Anno uno",
         "creator": "Frank Miller, David Mazzucchelli",
