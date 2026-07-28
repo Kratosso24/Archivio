@@ -1,9 +1,24 @@
 {
-  "exportedAt": "2026-07-28T22:30:47.940Z",
+  "exportedAt": "2026-07-28T22:32:01.239Z",
   "entries": {
     "musica": [],
     "film": [],
     "fumetti": [
+      {
+        "title": "Batman: Anno uno",
+        "creator": "Frank Miller, David Mazzucchelli",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "1987",
+        "status": "Da leggere",
+        "rating": 0,
+        "progress": "",
+        "date": "",
+        "notes": "",
+        "image": "",
+        "id": "hgxn0ww7ms58c0ka",
+        "createdAt": 1785277843930
+      },
       {
         "title": "Batman: Vittoria oscura",
         "creator": "Jeph Loeb, Tim Sale",
