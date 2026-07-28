@@ -1,9 +1,24 @@
 {
-  "exportedAt": "2026-07-28T22:33:09.685Z",
+  "exportedAt": "2026-07-28T22:35:02.379Z",
   "entries": {
     "musica": [],
     "film": [],
     "fumetti": [
+      {
+        "title": "Batman: The Killing Joke",
+        "creator": "Alan Moore, Brian Bolland",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "1988",
+        "status": "Letto",
+        "rating": 0,
+        "progress": "",
+        "date": "",
+        "notes": "",
+        "image": "",
+        "id": "ns8g7d3wms58f1xn",
+        "createdAt": 1785277985675
+      },
       {
         "title": "Batman: L'uomo che ride",
         "creator": "Ed Brubaker, Doug Mahnke",
