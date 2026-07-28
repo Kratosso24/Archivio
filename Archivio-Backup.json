@@ -1,9 +1,70 @@
 {
-  "exportedAt": "2026-07-28T21:39:02.319Z",
+  "exportedAt": "2026-07-28T21:41:31.577Z",
   "entries": {
     "musica": [],
     "film": [],
-    "fumetti": [],
+    "fumetti": [
+      {
+        "title": "Batman: Vittoria oscura",
+        "creator": "Jeph Loeb, Tim Sale",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "1999/2000",
+        "status": "Da leggere",
+        "rating": 0,
+        "progress": "",
+        "date": "",
+        "notes": "",
+        "image": "",
+        "id": "k8gy3dn4ms4zxwz4",
+        "createdAt": 1785263749168
+      },
+      {
+        "title": "Batman: Hush",
+        "creator": "Jeph Loeb, Jim Lee",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "2002/03",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-07-09",
+        "notes": "",
+        "image": "",
+        "id": "ww775xoems4zw7c4",
+        "createdAt": 1785263669284
+      },
+      {
+        "title": "Batman: Il ritorno del Cavaliere Oscuro",
+        "creator": "Frank Miller, Klaus Janson, Lynn Varley",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "1986",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-07-09",
+        "notes": "",
+        "image": "",
+        "id": "qwhgsiszms4ztqxv",
+        "createdAt": 1785263554723
+      },
+      {
+        "title": "Batman: Il Lungo Halloween",
+        "creator": "Jeph Loeb, Tim Sale",
+        "subtype": "Volume unico",
+        "genre": "Supereroi",
+        "year": "1996/97",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-05-26",
+        "notes": "",
+        "image": "",
+        "id": "a0u65ox4ms4zlzz7",
+        "createdAt": 1785263193187
+      }
+    ],
     "libri": []
   }
 }
