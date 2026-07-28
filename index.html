@@ -1272,7 +1272,7 @@ function App() {
       ascending.forEach((entry, idx) => {
         codeMap.set(entry.it.id, `${cat.prefix}${suffix} - ${String(idx + 1).padStart(3, "0")}`);
       });
-      const descending = [...withKey].sort((a, b) => b.key - a.key).map(e => e.it);
+      const descending = [...ascending].reverse().map(e => e.it);
       return {
         status,
         items: descending,
