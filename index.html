@@ -396,7 +396,7 @@ async function githubGetFile(cfg) {
   }
   return res.json();
 }
-async function githubPushBackup(cfg, dataObj) {
+async function githubPushBackupOnce(cfg, dataObj) {
   const existing = await githubGetFile(cfg);
   const body = {
     message: `Backup Schedario - ${new Date().toLocaleString("it-IT")}`,
@@ -416,9 +416,24 @@ async function githubPushBackup(cfg, dataObj) {
   });
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(err.message || `Errore GitHub (${res.status})`);
+    const message = err.message || `Errore GitHub (${res.status})`;
+    const error = new Error(message);
+    error.status = res.status;
+    throw error;
   }
   return res.json();
+}
+async function githubPushBackup(cfg, dataObj) {
+  try {
+    return await githubPushBackupOnce(cfg, dataObj);
+  } catch (e) {
+    // "sha does not match" happens when two backups race each other (es. automatico + manuale
+    // quasi insieme). In quel caso basta riprovare una volta con lo sha aggiornato.
+    const isConflict = e.status === 409 || e.status === 422 || /does not match|sha/i.test(e.message || "");
+    if (!isConflict) throw e;
+    await new Promise(r => setTimeout(r, 600));
+    return await githubPushBackupOnce(cfg, dataObj);
+  }
 }
 async function githubRestoreBackup(cfg) {
   const file = await githubGetFile(cfg);
@@ -1027,6 +1042,7 @@ function SettingsSheet({
   }, "Salva impostazioni"), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: doBackup,
+    disabled: backupStatus.state === "working",
     className: "focus-ring",
     style: {
       display: "flex",
@@ -1039,7 +1055,8 @@ function SettingsSheet({
       color: "#fff",
       background: C.green,
       border: "none",
-      cursor: "pointer"
+      cursor: backupStatus.state === "working" ? "default" : "pointer",
+      opacity: backupStatus.state === "working" ? 0.6 : 1
     }
   }, /*#__PURE__*/React.createElement(IconCloud, {
     size: 15,
@@ -1047,6 +1064,7 @@ function SettingsSheet({
   }), " Esegui backup ora"), /*#__PURE__*/React.createElement("button", {
     type: "button",
     onClick: doRestore,
+    disabled: backupStatus.state === "working",
     className: "focus-ring",
     style: {
       display: "flex",
@@ -1059,7 +1077,8 @@ function SettingsSheet({
       color: "#fff",
       background: C.rust,
       border: "none",
-      cursor: "pointer"
+      cursor: backupStatus.state === "working" ? "default" : "pointer",
+      opacity: backupStatus.state === "working" ? 0.6 : 1
     }
   }, /*#__PURE__*/React.createElement(IconDownload, {
     size: 15,
@@ -1114,6 +1133,7 @@ function App() {
     message: ""
   });
   const autoBackupTimer = useRef(null);
+  const backupInFlight = useRef(false);
   const cat = CATEGORIES.find(c => c.key === activeTab);
   const Icon = cat.icon;
   const runBackup = useCallback(async cfg => {
@@ -1124,6 +1144,8 @@ function App() {
       });
       return;
     }
+    if (backupInFlight.current) return; // un backup è già in corso, evita chiamate doppie
+    backupInFlight.current = true;
     setBackupStatus({
       state: "working",
       message: "Backup in corso…"
@@ -1150,6 +1172,8 @@ function App() {
         state: "error",
         message: e.message || "Errore durante il backup."
       });
+    } finally {
+      backupInFlight.current = false;
     }
   }, [entries]);
   const runRestore = useCallback(async cfg => {
