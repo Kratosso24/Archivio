@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T08:35:09.105Z",
+  "exportedAt": "2026-07-29T08:36:19.286Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -97,6 +97,21 @@
     ],
     "libri": [
       {
+        "title": "Tokyo Express",
+        "creator": "Seicho Matsumoto",
+        "subtype": "Romanzo",
+        "genre": "Giallo",
+        "year": "1958",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2024-08-05",
+        "notes": "",
+        "image": "",
+        "id": "mvhqyldlms5tx7v2",
+        "createdAt": 1785314105102
+      },
+      {
         "title": "Sostiene Pereira",
         "creator": "Antonio Tabucchi",
         "subtype": "Romanzo",
@@ -128,7 +143,7 @@
       },
       {
         "title": "Un posto tranquillo",
-        "creator": "Matsumoto Seichō",
+        "creator": "Seichō Matsumoto",
         "subtype": "Romanzo",
         "genre": "Giallo",
         "year": "1975",
