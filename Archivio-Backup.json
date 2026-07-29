@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T10:41:46.463Z",
+  "exportedAt": "2026-07-29T10:42:49.519Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,6 +96,21 @@
       }
     ],
     "libri": [
+      {
+        "title": "Fahrenheit 451",
+        "creator": "Ray Bradbury",
+        "subtype": "Romanzo",
+        "genre": "Distopico",
+        "year": "1953",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2024-11-26",
+        "notes": "",
+        "image": "",
+        "id": "6gue4sryms5yh65g",
+        "createdAt": 1785321754468
+      },
       {
         "title": "Tokyo Express",
         "creator": "Seichō Matsumoto",
