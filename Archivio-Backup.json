@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T08:02:48.560Z",
+  "exportedAt": "2026-07-29T08:04:20.849Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -95,6 +95,22 @@
         "createdAt": 1785263193187
       }
     ],
-    "libri": []
+    "libri": [
+      {
+        "title": "I guerrieri d'inverno",
+        "creator": "Olivier Norek",
+        "subtype": "Romanzo",
+        "genre": "Storico",
+        "year": "2026",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-04-16",
+        "notes": "",
+        "image": "",
+        "id": "dkscth5kms5srmj2",
+        "createdAt": 1785312164558
+      }
+    ]
   }
 }
