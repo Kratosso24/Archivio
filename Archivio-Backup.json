@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T08:21:20.265Z",
+  "exportedAt": "2026-07-29T08:24:02.914Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,6 +96,21 @@
       }
     ],
     "libri": [
+      {
+        "title": "108 rintocchi",
+        "creator": "Yoshimura Keiko",
+        "subtype": "Romanzo",
+        "genre": "Narrativa",
+        "year": "2023",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-03-19",
+        "notes": "",
+        "image": "",
+        "id": "2wsof9mnms5tffsz",
+        "createdAt": 1785313275587
+      },
       {
         "title": "La fattoria degli animali",
         "creator": "George Orwell",
