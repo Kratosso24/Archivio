@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T08:32:18.912Z",
+  "exportedAt": "2026-07-29T08:35:09.105Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,6 +96,21 @@
       }
     ],
     "libri": [
+      {
+        "title": "Sostiene Pereira",
+        "creator": "Antonio Tabucchi",
+        "subtype": "Romanzo",
+        "genre": "Storico",
+        "year": "1994",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2024-08-31",
+        "notes": "",
+        "image": "",
+        "id": "a8l8l58xms5ttkjh",
+        "createdAt": 1785313934909
+      },
       {
         "title": "I baffi",
         "creator": "Emmanuel Carrère",
