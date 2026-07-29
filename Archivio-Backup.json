@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T08:04:20.849Z",
+  "exportedAt": "2026-07-29T08:21:20.265Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,6 +96,21 @@
       }
     ],
     "libri": [
+      {
+        "title": "La fattoria degli animali",
+        "creator": "George Orwell",
+        "subtype": "Romanzo",
+        "genre": "Satirico",
+        "year": "1945",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-03-31",
+        "notes": "",
+        "image": "",
+        "id": "supg4jqfms5stlqm",
+        "createdAt": 1785312256846
+      },
       {
         "title": "I guerrieri d'inverno",
         "creator": "Olivier Norek",
