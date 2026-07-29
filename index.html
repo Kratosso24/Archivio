@@ -382,8 +382,10 @@ function encodedPath(path) {
   return path.split("/").filter(Boolean).map(encodeURIComponent).join("/");
 }
 async function githubGetFile(cfg) {
-  const url = `https://api.github.com/repos/${cfg.repo}/contents/${encodedPath(cfg.path)}?ref=${encodeURIComponent(cfg.branch || "main")}`;
+  const cacheBust = Date.now();
+  const url = `https://api.github.com/repos/${cfg.repo}/contents/${encodedPath(cfg.path)}?ref=${encodeURIComponent(cfg.branch || "main")}&_=${cacheBust}`;
   const res = await fetch(url, {
+    cache: "no-store",
     headers: {
       Authorization: `Bearer ${cfg.token}`,
       Accept: "application/vnd.github+json"
