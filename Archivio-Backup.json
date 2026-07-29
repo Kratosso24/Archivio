@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T10:40:44.283Z",
+  "exportedAt": "2026-07-29T10:41:46.463Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,21 +96,6 @@
       }
     ],
     "libri": [
-      {
-        "title": "Mattatoio N° 5 o La Crociata dei Bambini",
-        "creator": "Kurt Vonnegut Jr.",
-        "subtype": "Romanzo",
-        "genre": "Fantascienza",
-        "year": "1969",
-        "status": "Letto",
-        "rating": 3,
-        "progress": "",
-        "date": "2024-04-26",
-        "notes": "",
-        "image": "",
-        "id": "e3t92bj0ms5yc8l4",
-        "createdAt": 1785321524344
-      },
       {
         "title": "Tokyo Express",
         "creator": "Seichō Matsumoto",
