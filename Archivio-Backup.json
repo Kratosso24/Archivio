@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T08:29:16.673Z",
+  "exportedAt": "2026-07-29T08:32:18.912Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,6 +96,21 @@
       }
     ],
     "libri": [
+      {
+        "title": "I baffi",
+        "creator": "Emmanuel Carrère",
+        "subtype": "Romanzo",
+        "genre": "Psicologico",
+        "year": "1986",
+        "status": "Letto",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-02-18",
+        "notes": "",
+        "image": "",
+        "id": "7kx7un9qms5tpnx8",
+        "createdAt": 1785313752668
+      },
       {
         "title": "Un posto tranquillo",
         "creator": "Matsumoto Seichō",
