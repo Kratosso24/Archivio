@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-29T10:44:25.032Z",
+  "exportedAt": "2026-07-29T10:45:42.490Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -97,6 +97,21 @@
     ],
     "libri": [
       {
+        "title": "Mattatoio N° 5 o La Crociata dei Bambini",
+        "creator": "Kurt Vonnegut Jr.",
+        "subtype": "Romanzo",
+        "genre": "Distopico",
+        "year": "1969",
+        "status": "Da leggere",
+        "rating": 3,
+        "progress": "",
+        "date": "2024-04-26",
+        "notes": "",
+        "image": "",
+        "id": "dp95k5ulms5yl4us",
+        "createdAt": 1785321939412
+      },
+      {
         "title": "Fahrenheit 451",
         "creator": "Ray Bradbury",
         "subtype": "Romanzo",
@@ -108,8 +123,8 @@
         "date": "2024-11-26",
         "notes": "",
         "image": "",
-        "id": "51psfxcvms5yioby",
-        "createdAt": 1785321824687
+        "id": "6gue4sryms5yh65g",
+        "createdAt": 1785321754468
       },
       {
         "title": "Tokyo Express",
