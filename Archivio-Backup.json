@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-07-30T16:12:27.689Z",
+  "exportedAt": "2026-07-30T16:12:47.726Z",
   "entries": {
-    "musica": [],
+    "musica": [
+      {
+        "title": "Manifesto",
+        "creator": "Shablo",
+        "subtype": "Album",
+        "genre": "Soul Hip Hop",
+        "year": "2026",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-07-26",
+        "notes": "",
+        "image": "",
+        "id": "p2ajscqwms7pnsie",
+        "createdAt": 1785427879190
+      }
+    ],
     "film": [],
     "fumetti": [
       {
