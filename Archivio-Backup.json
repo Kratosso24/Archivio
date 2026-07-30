@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-30T16:08:48.424Z",
+  "exportedAt": "2026-07-30T16:09:02.366Z",
   "entries": {
     "musica": [],
     "film": [],
@@ -96,6 +96,21 @@
       }
     ],
     "libri": [
+      {
+        "title": "L'alchimista",
+        "creator": "Paulo Coelho",
+        "subtype": "Romanzo",
+        "genre": "di Formazione",
+        "year": "1988",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2024-09-18",
+        "notes": "",
+        "image": "",
+        "id": "msrfwcdfms7pkh37",
+        "createdAt": 1785427724419
+      },
       {
         "title": "Mattatoio N° 5 o La Crociata dei Bambini",
         "creator": "Kurt Vonnegut Jr.",
