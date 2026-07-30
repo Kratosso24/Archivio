@@ -1,13 +1,28 @@
 {
-  "exportedAt": "2026-07-30T16:13:41.988Z",
+  "exportedAt": "2026-07-30T16:15:12.475Z",
   "entries": {
     "musica": [
+      {
+        "title": "The Number of the Beast",
+        "creator": "Iron Maiden",
+        "subtype": "Album",
+        "genre": "Heavy metal",
+        "year": "",
+        "status": "Ascoltato",
+        "rating": 0,
+        "progress": "",
+        "date": "2026-07-21",
+        "notes": "",
+        "image": "",
+        "id": "q669vkwgms7pqrlk",
+        "createdAt": 1785428017976
+      },
       {
         "title": "Manifesto",
         "creator": "Shablo",
         "subtype": "Album",
         "genre": "Hip Hop Soul",
-        "year": "2026",
+        "year": "2025",
         "status": "Ascoltato",
         "rating": 4,
         "progress": "",
