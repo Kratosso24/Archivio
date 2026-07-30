@@ -1,7 +1,22 @@
 {
-  "exportedAt": "2026-07-30T18:23:40.213Z",
+  "exportedAt": "2026-07-30T18:23:46.988Z",
   "entries": {
     "musica": [
+      {
+        "title": "Figgatta de Blanc",
+        "creator": "Elio e le Storie Tese",
+        "subtype": "Album",
+        "genre": "Rock Demenziale",
+        "year": "2016",
+        "status": "Ascoltato",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-07-08",
+        "notes": "",
+        "image": "",
+        "id": "zfp4xllfms7udwqz",
+        "createdAt": 1785435816203
+      },
       {
         "title": "The Number of the Beast",
         "creator": "Iron Maiden",
