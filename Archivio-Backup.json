@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:25:07.118Z",
+  "exportedAt": "2026-07-31T22:25:56.165Z",
   "entries": {
     "musica": [
       {
@@ -52,6 +52,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Toy Story 5",
+        "creator": "Andrew Stanton",
+        "subtype": "Film",
+        "genre": "Animazione",
+        "year": "2026",
+        "status": "Visto",
+        "rating": 0,
+        "progress": "",
+        "date": "2026-06-26",
+        "notes": "",
+        "image": "",
+        "duration": "",
+        "id": "g6gzhytzms9ig9l6",
+        "createdAt": 1785536703114
+      },
       {
         "title": "Odissea",
         "creator": "Christopher Nolan",
