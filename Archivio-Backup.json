@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:12:48.142Z",
+  "exportedAt": "2026-07-31T22:13:20.368Z",
   "entries": {
     "musica": [
       {
@@ -78,7 +78,8 @@
         "notes": "",
         "image": "",
         "id": "vc7rom9kms85p0by",
-        "createdAt": 1785454809838
+        "createdAt": 1785454809838,
+        "duration": "145"
       }
     ],
     "fumetti": [
