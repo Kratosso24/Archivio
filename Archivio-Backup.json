@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T14:54:22.694Z",
+  "exportedAt": "2026-07-31T14:56:19.098Z",
   "entries": {
     "musica": [
       {
@@ -49,6 +49,21 @@
       }
     ],
     "film": [
+      {
+        "title": "Odissea",
+        "creator": "Christopher Nolan",
+        "subtype": "Film",
+        "genre": "",
+        "year": "2026",
+        "status": "Visto",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-07-31",
+        "notes": "",
+        "image": "",
+        "id": "gbl096vsms92clgm",
+        "createdAt": 1785509658022
+      },
       {
         "title": "Spider-Man: Brand New Day",
         "creator": "Destin Daniel Cretton",
