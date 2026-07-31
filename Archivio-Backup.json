@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:21:01.367Z",
+  "exportedAt": "2026-07-31T22:21:17.983Z",
   "entries": {
     "musica": [
       {
@@ -194,7 +194,8 @@
         "notes": "",
         "image": "",
         "id": "msrfwcdfms7pkh37",
-        "createdAt": 1785427724419
+        "createdAt": 1785427724419,
+        "duration": "182"
       },
       {
         "title": "Mattatoio N° 5 o La Crociata dei Bambini",
