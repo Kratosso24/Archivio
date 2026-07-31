@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:14:00.333Z",
+  "exportedAt": "2026-07-31T22:16:13.665Z",
   "entries": {
     "musica": [
       {
@@ -15,7 +15,8 @@
         "notes": "",
         "image": "",
         "id": "zfp4xllfms7udwqz",
-        "createdAt": 1785435816203
+        "createdAt": 1785435816203,
+        "duration": "68"
       },
       {
         "title": "The Number of the Beast",
