@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:21:17.983Z",
+  "exportedAt": "2026-07-31T22:21:26.061Z",
   "entries": {
     "musica": [
       {
@@ -256,7 +256,8 @@
         "notes": "",
         "image": "",
         "id": "a8l8l58xms5ttkjh",
-        "createdAt": 1785313934909
+        "createdAt": 1785313934909,
+        "duration": "192"
       },
       {
         "title": "I baffi",
