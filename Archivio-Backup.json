@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:16:13.665Z",
+  "exportedAt": "2026-07-31T22:16:24.367Z",
   "entries": {
     "musica": [
       {
@@ -159,7 +159,8 @@
         "notes": "",
         "image": "",
         "id": "qwhgsiszms4ztqxv",
-        "createdAt": 1785263554723
+        "createdAt": 1785263554723,
+        "duration": "208"
       },
       {
         "title": "Batman: Il Lungo Halloween",
