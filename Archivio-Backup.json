@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:12:26.068Z",
+  "exportedAt": "2026-07-31T22:12:48.142Z",
   "entries": {
     "musica": [
       {
@@ -62,7 +62,8 @@
         "notes": "",
         "image": "",
         "id": "gbl096vsms92clgm",
-        "createdAt": 1785509658022
+        "createdAt": 1785509658022,
+        "duration": "172"
       },
       {
         "title": "Spider-Man: Brand New Day",
