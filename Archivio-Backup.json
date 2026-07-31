@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:19:55.876Z",
+  "exportedAt": "2026-07-31T22:20:16.350Z",
   "entries": {
     "musica": [
       {
@@ -299,7 +299,8 @@
         "notes": "",
         "image": "",
         "id": "2wsof9mnms5tffsz",
-        "createdAt": 1785313275587
+        "createdAt": 1785313275587,
+        "duration": "302"
       },
       {
         "title": "La fattoria degli animali",
