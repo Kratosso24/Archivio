@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:21:47.698Z",
+  "exportedAt": "2026-07-31T22:22:47.071Z",
   "entries": {
     "musica": [
       {
@@ -210,7 +210,8 @@
         "notes": "",
         "image": "",
         "id": "dp95k5ulms5yl4us",
-        "createdAt": 1785321939412
+        "createdAt": 1785321939412,
+        "duration": "196"
       },
       {
         "title": "Fahrenheit 451",
