@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:25:56.165Z",
+  "exportedAt": "2026-07-31T22:27:34.188Z",
   "entries": {
     "musica": [
       {
@@ -56,15 +56,15 @@
         "title": "Toy Story 5",
         "creator": "Andrew Stanton",
         "subtype": "Film",
-        "genre": "Animazione",
+        "genre": "Avventura",
         "year": "2026",
         "status": "Visto",
-        "rating": 0,
+        "rating": 4,
         "progress": "",
         "date": "2026-06-26",
         "notes": "",
         "image": "",
-        "duration": "",
+        "duration": "102",
         "id": "g6gzhytzms9ig9l6",
         "createdAt": 1785536703114
       },
