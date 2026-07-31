@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:30:35.274Z",
+  "exportedAt": "2026-07-31T22:33:46.063Z",
   "entries": {
     "musica": [
       {
@@ -52,6 +52,22 @@
       }
     ],
     "film": [
+      {
+        "title": "King Marracash",
+        "creator": "Pippo Mezzapesa",
+        "subtype": "Film",
+        "genre": "Documentario",
+        "year": "2026",
+        "status": "Visto",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-05-27",
+        "notes": "",
+        "image": "",
+        "duration": "100",
+        "id": "licqq6whms9inaso",
+        "createdAt": 1785537031272
+      },
       {
         "title": "Kill Bill: The Whole Bloody Affair",
         "creator": "Quentin Tarantino",
