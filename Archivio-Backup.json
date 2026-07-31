@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:16:54.811Z",
+  "exportedAt": "2026-07-31T22:17:53.368Z",
   "entries": {
     "musica": [
       {
@@ -176,7 +176,8 @@
         "notes": "",
         "image": "",
         "id": "a0u65ox4ms4zlzz7",
-        "createdAt": 1785263193187
+        "createdAt": 1785263193187,
+        "duration": "384"
       }
     ],
     "libri": [
