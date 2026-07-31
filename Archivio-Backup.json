@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:20:51.241Z",
+  "exportedAt": "2026-07-31T22:21:01.367Z",
   "entries": {
     "musica": [
       {
@@ -224,7 +224,8 @@
         "notes": "",
         "image": "",
         "id": "6gue4sryms5yh65g",
-        "createdAt": 1785321754468
+        "createdAt": 1785321754468,
+        "duration": "249"
       },
       {
         "title": "Tokyo Express",
