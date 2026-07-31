@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:21:26.061Z",
+  "exportedAt": "2026-07-31T22:21:47.698Z",
   "entries": {
     "musica": [
       {
@@ -241,7 +241,8 @@
         "notes": "",
         "image": "",
         "id": "mvhqyldlms5tx7v2",
-        "createdAt": 1785314105102
+        "createdAt": 1785314105102,
+        "duration": "175"
       },
       {
         "title": "Sostiene Pereira",
