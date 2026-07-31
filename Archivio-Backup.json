@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:16:24.367Z",
+  "exportedAt": "2026-07-31T22:16:54.811Z",
   "entries": {
     "musica": [
       {
@@ -144,7 +144,8 @@
         "notes": "",
         "image": "",
         "id": "ww775xoems4zw7c4",
-        "createdAt": 1785263669284
+        "createdAt": 1785263669284,
+        "duration": "312"
       },
       {
         "title": "Batman: Il ritorno del Cavaliere Oscuro",
