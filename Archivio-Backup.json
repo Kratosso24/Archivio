@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-30T23:40:14.398Z",
+  "exportedAt": "2026-07-31T14:54:22.694Z",
   "entries": {
     "musica": [
       {
@@ -48,7 +48,23 @@
         "createdAt": 1785427879190
       }
     ],
-    "film": [],
+    "film": [
+      {
+        "title": "Spider-Man: Brand New Day",
+        "creator": "Destin Daniel Cretton",
+        "subtype": "Film",
+        "genre": "Azione",
+        "year": "2026",
+        "status": "Visto",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-07-31",
+        "notes": "",
+        "image": "",
+        "id": "vc7rom9kms85p0by",
+        "createdAt": 1785454809838
+      }
+    ],
     "fumetti": [
       {
         "title": "Batman: L'uomo che ride",
