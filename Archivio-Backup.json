@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:13:44.368Z",
+  "exportedAt": "2026-07-31T22:14:00.333Z",
   "entries": {
     "musica": [
       {
@@ -30,7 +30,8 @@
         "notes": "",
         "image": "",
         "id": "q669vkwgms7pqrlk",
-        "createdAt": 1785428017976
+        "createdAt": 1785428017976,
+        "duration": "39"
       },
       {
         "title": "Manifesto",
