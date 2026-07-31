@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:20:16.350Z",
+  "exportedAt": "2026-07-31T22:20:27.076Z",
   "entries": {
     "musica": [
       {
@@ -284,7 +284,8 @@
         "notes": "",
         "image": "",
         "id": "hxruyru8ms5tif3n",
-        "createdAt": 1785313414643
+        "createdAt": 1785313414643,
+        "duration": "195"
       },
       {
         "title": "108 rintocchi",
