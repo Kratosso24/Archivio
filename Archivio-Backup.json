@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:20:27.076Z",
+  "exportedAt": "2026-07-31T22:20:51.241Z",
   "entries": {
     "musica": [
       {
@@ -269,7 +269,8 @@
         "notes": "",
         "image": "",
         "id": "7kx7un9qms5tpnx8",
-        "createdAt": 1785313752668
+        "createdAt": 1785313752668,
+        "duration": "149"
       },
       {
         "title": "Un posto tranquillo",
