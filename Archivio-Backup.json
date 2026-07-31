@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:27:34.188Z",
+  "exportedAt": "2026-07-31T22:30:35.274Z",
   "entries": {
     "musica": [
       {
@@ -52,6 +52,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Kill Bill: The Whole Bloody Affair",
+        "creator": "Quentin Tarantino",
+        "subtype": "Film",
+        "genre": "Azione",
+        "year": "2004",
+        "status": "Visto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-06-02",
+        "notes": "",
+        "image": "",
+        "duration": "253",
+        "id": "fwvz2ve0ms9ijf2f",
+        "createdAt": 1785536850183
+      },
       {
         "title": "Toy Story 5",
         "creator": "Andrew Stanton",
