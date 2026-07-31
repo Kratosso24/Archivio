@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:38:03.932Z",
+  "exportedAt": "2026-07-31T22:38:14.808Z",
   "entries": {
     "musica": [
       {
@@ -52,6 +52,22 @@
       }
     ],
     "film": [
+      {
+        "title": "The Menu",
+        "creator": "Mark Mylod",
+        "subtype": "Film",
+        "genre": "Thriller",
+        "year": "2022",
+        "status": "Da vedere",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-04-06",
+        "notes": "",
+        "image": "",
+        "duration": "106",
+        "id": "mcujf7psms9iwwzb",
+        "createdAt": 1785537479927
+      },
       {
         "title": "Attitudini: nessuna",
         "creator": "Sophie Chiarello",
