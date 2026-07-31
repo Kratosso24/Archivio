@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T14:56:19.098Z",
+  "exportedAt": "2026-07-31T15:03:10.778Z",
   "entries": {
     "musica": [
       {
@@ -53,7 +53,7 @@
         "title": "Odissea",
         "creator": "Christopher Nolan",
         "subtype": "Film",
-        "genre": "",
+        "genre": "Epico",
         "year": "2026",
         "status": "Visto",
         "rating": 4,
