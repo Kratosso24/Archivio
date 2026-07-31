@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:13:20.368Z",
+  "exportedAt": "2026-07-31T22:13:44.368Z",
   "entries": {
     "musica": [
       {
@@ -45,7 +45,8 @@
         "notes": "",
         "image": "",
         "id": "p2ajscqwms7pnsie",
-        "createdAt": 1785427879190
+        "createdAt": 1785427879190,
+        "duration": "55"
       }
     ],
     "film": [
