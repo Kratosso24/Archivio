@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:17:53.368Z",
+  "exportedAt": "2026-07-31T22:19:33.680Z",
   "entries": {
     "musica": [
       {
@@ -329,7 +329,8 @@
         "notes": "",
         "image": "",
         "id": "dkscth5kms5srmj2",
-        "createdAt": 1785312164558
+        "createdAt": 1785312164558,
+        "duration": "408"
       }
     ]
   }
