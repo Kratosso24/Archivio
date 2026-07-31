@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:19:33.680Z",
+  "exportedAt": "2026-07-31T22:19:55.876Z",
   "entries": {
     "musica": [
       {
@@ -314,7 +314,8 @@
         "notes": "",
         "image": "",
         "id": "supg4jqfms5stlqm",
-        "createdAt": 1785312256846
+        "createdAt": 1785312256846,
+        "duration": "115"
       },
       {
         "title": "I guerrieri d'inverno",
@@ -330,7 +331,7 @@
         "image": "",
         "id": "dkscth5kms5srmj2",
         "createdAt": 1785312164558,
-        "duration": "408"
+        "duration": "401"
       }
     ]
   }
