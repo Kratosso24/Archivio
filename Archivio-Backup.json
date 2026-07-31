@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-07-31T22:33:46.063Z",
+  "exportedAt": "2026-07-31T22:38:03.932Z",
   "entries": {
     "musica": [
       {
@@ -52,6 +52,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Attitudini: nessuna",
+        "creator": "Sophie Chiarello",
+        "subtype": "Film",
+        "genre": "Documentario",
+        "year": "2025",
+        "status": "Visto",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-04-07",
+        "notes": "",
+        "image": "",
+        "duration": "118",
+        "id": "iwpcstxcms9ire0c",
+        "createdAt": 1785537222060
+      },
       {
         "title": "King Marracash",
         "creator": "Pippo Mezzapesa",
