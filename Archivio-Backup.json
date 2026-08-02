@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-02T20:48:09.458Z",
+  "exportedAt": "2026-08-02T20:50:39.548Z",
   "entries": {
     "musica": [
+      {
+        "title": "POP VIRUS",
+        "creator": "Gen Hoshino",
+        "subtype": "Album",
+        "genre": "J-Pop",
+        "year": "2018",
+        "status": "Ascoltato",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-07-06",
+        "notes": "",
+        "image": "",
+        "duration": "55",
+        "id": "nah9dbfkmsc9v5om",
+        "createdAt": 1785703679878
+      },
       {
         "title": "On Guitar",
         "creator": "Masayoshi Takanaka",
