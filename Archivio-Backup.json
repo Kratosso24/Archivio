@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-02T20:53:39.563Z",
+  "exportedAt": "2026-08-02T20:53:45.340Z",
   "entries": {
     "musica": [
+      {
+        "title": "Saudade",
+        "creator": "Selton",
+        "subtype": "Album",
+        "genre": "Indie Pop",
+        "year": "2013",
+        "status": "Da ascoltare",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-06-18",
+        "notes": "",
+        "image": "",
+        "duration": "65",
+        "id": "3uzppvbvmsca2cp6",
+        "createdAt": 1785704015562
+      },
       {
         "title": "Outlandos d'Amour",
         "creator": "The Police",
