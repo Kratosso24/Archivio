@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-02T20:50:39.548Z",
+  "exportedAt": "2026-08-02T20:50:53.905Z",
   "entries": {
     "musica": [
+      {
+        "title": "Outlandos d'Amour",
+        "creator": "The Police",
+        "subtype": "Album",
+        "genre": "Reggae Rock",
+        "year": "1978",
+        "status": "Da ascoltare",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-08-27",
+        "notes": "",
+        "image": "",
+        "duration": "38",
+        "id": "au5ue6w1msc9yhsq",
+        "createdAt": 1785703835546
+      },
       {
         "title": "POP VIRUS",
         "creator": "Gen Hoshino",
