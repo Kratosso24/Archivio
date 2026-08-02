@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-02T20:50:53.905Z",
+  "exportedAt": "2026-08-02T20:51:04.234Z",
   "entries": {
     "musica": [
       {
@@ -8,7 +8,7 @@
         "subtype": "Album",
         "genre": "Reggae Rock",
         "year": "1978",
-        "status": "Da ascoltare",
+        "status": "Ascoltato",
         "rating": 5,
         "progress": "",
         "date": "2026-08-27",
