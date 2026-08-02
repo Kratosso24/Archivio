@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-01T13:55:42.358Z",
+  "exportedAt": "2026-08-02T20:48:09.458Z",
   "entries": {
     "musica": [
+      {
+        "title": "On Guitar",
+        "creator": "Masayoshi Takanaka",
+        "subtype": "Album",
+        "genre": "Jazz Fusion",
+        "year": "1978",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-08-01",
+        "notes": "",
+        "image": "",
+        "duration": "43",
+        "id": "hgr19lgtmsafp0c3",
+        "createdAt": 1785592538355
+      },
       {
         "title": "Figgatta de Blanc",
         "creator": "Elio e le Storie Tese",
