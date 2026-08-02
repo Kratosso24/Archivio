@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-02T21:01:09.317Z",
+  "exportedAt": "2026-08-02T21:01:44.945Z",
   "entries": {
     "musica": [
+      {
+        "title": "Banana à milanesa",
+        "creator": "Selton",
+        "subtype": "Album",
+        "genre": "World Music",
+        "year": "2008",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-06-11",
+        "notes": "",
+        "image": "",
+        "duration": "42",
+        "id": "ft621696mscabzqa",
+        "createdAt": 1785704465314
+      },
       {
         "title": "Saudade",
         "creator": "Selton",
