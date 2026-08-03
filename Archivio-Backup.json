@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-03T20:59:59.408Z",
+  "exportedAt": "2026-08-03T21:04:25.652Z",
   "entries": {
     "musica": [
+      {
+        "title": "Moltiplicato",
+        "creator": "Tony Canto",
+        "subtype": "Album",
+        "genre": "Cantautorato",
+        "year": "2016",
+        "status": "Ascoltato",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-06-09",
+        "notes": "",
+        "image": "",
+        "duration": "34",
+        "id": "4cjdj9sfmsdpqcgf",
+        "createdAt": 1785790795407
+      },
       {
         "title": "Remember That You Will Die",
         "creator": "Polyphia",
