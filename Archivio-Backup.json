@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-03T17:45:32.508Z",
+  "exportedAt": "2026-08-03T20:54:49.609Z",
   "entries": {
     "musica": [
+      {
+        "title": "Remember That You Will Die",
+        "creator": "Polyphia",
+        "subtype": "Album",
+        "genre": "Math Rock",
+        "year": "2022",
+        "status": "Ascoltato",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-06-10",
+        "notes": "",
+        "image": "",
+        "duration": "39",
+        "id": "kry7ydehmsdisa7u",
+        "createdAt": 1785779128506
+      },
       {
         "title": "Banana à milanesa",
         "creator": "Selton",
