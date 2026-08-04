@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-04T17:13:50.930Z",
+  "exportedAt": "2026-08-04T17:14:26.281Z",
   "entries": {
     "musica": [
+      {
+        "title": "Māyā",
+        "creator": "Mace",
+        "subtype": "Album",
+        "genre": "Alternative Hip Hop",
+        "year": "20241",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-05-18",
+        "notes": "",
+        "image": "",
+        "duration": "",
+        "id": "wl4a79lbmsex3dm8",
+        "createdAt": 1785863626928
+      },
       {
         "title": "Mi piace",
         "creator": "Anna Castiglia",
