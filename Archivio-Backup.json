@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-04T17:11:08.444Z",
+  "exportedAt": "2026-08-04T17:11:17.208Z",
   "entries": {
     "musica": [
+      {
+        "title": "MI PIACE",
+        "creator": "Anna Castiglia",
+        "subtype": "Album",
+        "genre": "Alternative",
+        "year": "2024",
+        "status": "Da ascoltare",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-05-19",
+        "notes": "",
+        "image": "",
+        "duration": "37",
+        "id": "rb2ee5rsmsewzw8q",
+        "createdAt": 1785863464442
+      },
       {
         "title": "Travelling Without Moving",
         "creator": "Jamiroquai",
