@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-03T21:04:25.652Z",
+  "exportedAt": "2026-08-04T17:07:01.321Z",
   "entries": {
     "musica": [
+      {
+        "title": "Travelling Without Moving",
+        "creator": "Jamiroquai",
+        "subtype": "Album",
+        "genre": "Acid Jazz",
+        "year": "1996",
+        "status": "Ascoltato",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-06-01",
+        "notes": "",
+        "image": "",
+        "duration": "67",
+        "id": "s76g4eg3msdpw1w2",
+        "createdAt": 1785791061650
+      },
       {
         "title": "Moltiplicato",
         "creator": "Tony Canto",
