@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-04T17:17:34.215Z",
+  "exportedAt": "2026-08-04T17:17:51.821Z",
   "entries": {
     "musica": [
+      {
+        "title": "Il re è nudo",
+        "creator": "Pinguini Tattici Nucleari",
+        "subtype": "Album",
+        "genre": "Indie Rock",
+        "year": "2014",
+        "status": "Ascoltato",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-05-06",
+        "notes": "",
+        "image": "",
+        "duration": "32",
+        "id": "dxg3bg6dmsex859r",
+        "createdAt": 1785863849391
+      },
       {
         "title": "Māyā",
         "creator": "Mace",
