@@ -259,6 +259,9 @@ const IconCalendar = p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/
   x2: "21",
   y2: "10"
 }));
+const IconStarChart = p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("polygon", {
+  points: "12,2 15,9 22,9.5 16.5,14.5 18.5,22 12,17.5 5.5,22 7.5,14.5 2,9.5 9,9"
+}));
 const IconChevronLeft = p => /*#__PURE__*/React.createElement(Svg, p, /*#__PURE__*/React.createElement("path", {
   d: "M15 18l-6-6 6-6"
 }));
@@ -1619,6 +1622,265 @@ function CalendarSheet({
   }), c.label))))));
 }
 
+/* ---------- Genre radar chart (read-only) ---------- */
+function truncateLabel(s, max = 11) {
+  return s.length > max ? s.slice(0, max - 1) + "…" : s;
+}
+function RadarChart({
+  data,
+  color,
+  size = 300
+}) {
+  const n = data.length;
+  const cx = size / 2,
+    cy = size / 2;
+  const R = size / 2 - 80;
+  const maxVal = Math.max(...data.map(d => d.value), 1);
+  const angleFor = i => -Math.PI / 2 + i * (2 * Math.PI / n);
+  const pointFor = (i, val) => {
+    const r = val / maxVal * R;
+    const a = angleFor(i);
+    return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+  };
+  const ringLevels = [0.25, 0.5, 0.75, 1];
+  const dataPoints = data.map((d, i) => pointFor(i, d.value));
+  const dataPath = dataPoints.map(p => p.join(",")).join(" ");
+  return /*#__PURE__*/React.createElement("svg", {
+    width: size,
+    height: size,
+    viewBox: `0 0 ${size} ${size}`,
+    style: {
+      overflow: "visible",
+      maxWidth: "100%"
+    }
+  }, ringLevels.map((lvl, ri) => {
+    const ringPoints = data.map((_, i) => {
+      const a = angleFor(i);
+      const r = lvl * R;
+      return [cx + r * Math.cos(a), cy + r * Math.sin(a)].join(",");
+    }).join(" ");
+    return /*#__PURE__*/React.createElement("polygon", {
+      key: ri,
+      points: ringPoints,
+      fill: "none",
+      stroke: C.line,
+      strokeWidth: "1"
+    });
+  }), data.map((d, i) => {
+    const a = angleFor(i);
+    const x = cx + R * Math.cos(a),
+      y = cy + R * Math.sin(a);
+    return /*#__PURE__*/React.createElement("line", {
+      key: i,
+      x1: cx,
+      y1: cy,
+      x2: x,
+      y2: y,
+      stroke: C.line,
+      strokeWidth: "1"
+    });
+  }), /*#__PURE__*/React.createElement("polygon", {
+    points: dataPath,
+    fill: color,
+    fillOpacity: "0.28",
+    stroke: color,
+    strokeWidth: "2"
+  }), dataPoints.map((p, i) => /*#__PURE__*/React.createElement("circle", {
+    key: i,
+    cx: p[0],
+    cy: p[1],
+    r: "3",
+    fill: color
+  })), data.map((d, i) => {
+    const a = angleFor(i);
+    const lx = cx + (R + 14) * Math.cos(a);
+    const ly = cy + (R + 14) * Math.sin(a);
+    let anchor = "middle";
+    if (Math.cos(a) > 0.3) anchor = "start";else if (Math.cos(a) < -0.3) anchor = "end";
+    return /*#__PURE__*/React.createElement("text", {
+      key: i,
+      x: lx,
+      y: ly,
+      fontSize: "10",
+      fill: C.inkSoft,
+      textAnchor: anchor,
+      dominantBaseline: "middle",
+      fontFamily: "'JetBrains Mono', monospace"
+    }, truncateLabel(d.label));
+  }));
+}
+function GenreStatsSheet({
+  entries,
+  onClose
+}) {
+  const perCategory = useMemo(() => {
+    return CATEGORIES.map(c => {
+      const doneStatus = c.statuses[2];
+      const counts = {};
+      (entries[c.key] || []).forEach(it => {
+        if (it.status === doneStatus && it.genre && it.genre.trim()) {
+          const g = it.genre.trim();
+          counts[g] = (counts[g] || 0) + 1;
+        }
+      });
+      const data = Object.entries(counts).map(([label, value]) => ({
+        label,
+        value
+      })).sort((a, b) => b.value - a.value).slice(0, 8);
+      return {
+        cat: c,
+        data
+      };
+    });
+  }, [entries]);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "fixed",
+      inset: 0,
+      zIndex: 50,
+      display: "flex",
+      justifyContent: "center",
+      background: "rgba(38,34,27,0.5)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: C.card,
+      borderLeft: `1px solid ${C.line}`,
+      borderRight: `1px solid ${C.line}`,
+      height: "94vh",
+      marginTop: "6vh",
+      borderTopLeftRadius: "12px",
+      borderTopRightRadius: "12px",
+      width: "100%",
+      maxWidth: "560px",
+      overflowY: "auto"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      gap: "8px",
+      padding: "12px 20px",
+      borderBottom: `1px solid ${C.line}`,
+      background: C.card,
+      position: "sticky",
+      top: 0,
+      zIndex: 1
+    }
+  }, /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontFamily: "'Fraunces', serif",
+      fontWeight: 700,
+      fontSize: "1.15rem",
+      margin: 0
+    }
+  }, "Generi"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onClose,
+    className: "focus-ring",
+    style: {
+      background: "none",
+      border: "none",
+      cursor: "pointer",
+      padding: "4px"
+    }
+  }, /*#__PURE__*/React.createElement(IconX, {
+    size: 20,
+    color: C.ink
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: "16px 24px",
+      display: "flex",
+      flexDirection: "column",
+      gap: "28px"
+    }
+  }, perCategory.map(({
+    cat: c,
+    data
+  }) => {
+    const CIcon = c.icon;
+    return /*#__PURE__*/React.createElement("div", {
+      key: c.key
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+        marginBottom: "10px"
+      }
+    }, /*#__PURE__*/React.createElement(CIcon, {
+      size: 16,
+      color: c.accent
+    }), /*#__PURE__*/React.createElement("h3", {
+      style: {
+        fontFamily: "'Fraunces', serif",
+        fontWeight: 600,
+        fontSize: "1rem",
+        color: c.accent,
+        margin: 0
+      }
+    }, c.label)), data.length === 0 ? /*#__PURE__*/React.createElement("p", {
+      style: {
+        fontSize: "13px",
+        color: C.inkSoft
+      }
+    }, "Nessun genere segnato ancora tra le schede completate.") : data.length < 3 ? /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: "flex",
+        flexDirection: "column",
+        gap: "6px"
+      }
+    }, /*#__PURE__*/React.createElement("p", {
+      style: {
+        fontSize: "12px",
+        color: C.inkSoft,
+        marginBottom: "4px"
+      }
+    }, "Servono almeno 3 generi diversi per il grafico a stella — per ora:"), data.map(d => /*#__PURE__*/React.createElement("div", {
+      key: d.label,
+      style: {
+        display: "flex",
+        justifyContent: "space-between",
+        fontSize: "13px"
+      }
+    }, /*#__PURE__*/React.createElement("span", null, d.label), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: "'JetBrains Mono', monospace",
+        color: c.accent
+      }
+    }, d.value)))) : /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: "flex",
+        justifyContent: "center"
+      }
+    }, /*#__PURE__*/React.createElement(RadarChart, {
+      data: data,
+      color: c.accent
+    })), /*#__PURE__*/React.createElement("div", {
+      style: {
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "6px 14px",
+        justifyContent: "center",
+        marginTop: "10px"
+      }
+    }, data.map(d => /*#__PURE__*/React.createElement("span", {
+      key: d.label,
+      style: {
+        fontSize: "11px",
+        color: C.inkSoft,
+        fontFamily: "'JetBrains Mono', monospace"
+      }
+    }, d.label, ": ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: c.accent,
+        fontWeight: 600
+      }
+    }, d.value))))));
+  }))));
+}
+
 /* ---------- Main App ---------- */
 function App() {
   const [entries, setEntries] = useState(() => {
@@ -1636,6 +1898,7 @@ function App() {
   const [form, setForm] = useState(emptyForm);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [calendarOpen, setCalendarOpen] = useState(false);
+  const [genresOpen, setGenresOpen] = useState(false);
   const [githubConfig, setGithubConfig] = useState(loadGithubConfig());
   const [backupStatus, setBackupStatus] = useState({
     state: "idle",
@@ -1904,6 +2167,21 @@ function App() {
       display: "flex"
     }
   }, /*#__PURE__*/React.createElement(IconCalendar, {
+    size: 16,
+    color: C.inkSoft
+  })), /*#__PURE__*/React.createElement("button", {
+    onClick: () => setGenresOpen(true),
+    className: "focus-ring",
+    "aria-label": "Generi",
+    style: {
+      background: "none",
+      border: `1px solid ${C.line}`,
+      borderRadius: "6px",
+      padding: "6px",
+      cursor: "pointer",
+      display: "flex"
+    }
+  }, /*#__PURE__*/React.createElement(IconStarChart, {
     size: 16,
     color: C.inkSoft
   })), /*#__PURE__*/React.createElement("button", {
@@ -2276,6 +2554,9 @@ function App() {
   }), calendarOpen && /*#__PURE__*/React.createElement(CalendarSheet, {
     doneByDate: doneByDate,
     onClose: () => setCalendarOpen(false)
+  }), genresOpen && /*#__PURE__*/React.createElement(GenreStatsSheet, {
+    entries: entries,
+    onClose: () => setGenresOpen(false)
   }), settingsOpen && /*#__PURE__*/React.createElement(SettingsSheet, {
     config: githubConfig,
     backupStatus: backupStatus,
