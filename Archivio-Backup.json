@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-10T13:13:14.903Z",
+  "exportedAt": "2026-08-10T13:14:27.942Z",
   "entries": {
     "musica": [
+      {
+        "title": "Effetti Personali",
+        "creator": "Sergio Caputo",
+        "subtype": "Album",
+        "genre": "Pop Jazz",
+        "year": "1986",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-08-10",
+        "notes": "",
+        "image": "",
+        "duration": "38",
+        "id": "jiw4tgxrmsn9525b",
+        "createdAt": 1786367590175
+      },
       {
         "title": "Il re è nudo",
         "creator": "Pinguini Tattici Nucleari",
