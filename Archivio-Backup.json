@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-07T15:29:25.642Z",
+  "exportedAt": "2026-08-10T13:13:14.903Z",
   "entries": {
     "musica": [
       {
@@ -228,6 +228,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Il diavolo veste Prada 2",
+        "creator": "David Frankel",
+        "subtype": "Film",
+        "genre": "Drammatico",
+        "year": "2026",
+        "status": "Visto",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-08-07",
+        "notes": "",
+        "image": "",
+        "duration": "119",
+        "id": "9g1qg0lrmsj3onaf",
+        "createdAt": 1786116561639
+      },
       {
         "title": "The Menu",
         "creator": "Mark Mylod",
