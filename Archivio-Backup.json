@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-11T21:46:30.763Z",
+  "exportedAt": "2026-08-17T12:46:13.255Z",
   "entries": {
     "musica": [
       {
@@ -244,6 +244,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Boris - Il film",
+        "creator": "Giacomo Ciarrapico, Mattia Torre e Luca Vendruscolo",
+        "subtype": "Film",
+        "genre": "Commedia",
+        "year": "2011",
+        "status": "Visto",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-08-11",
+        "notes": "",
+        "image": "",
+        "duration": "101",
+        "id": "v97uymzbmsp6wzlu",
+        "createdAt": 1786484786754
+      },
       {
         "title": "Il diavolo veste Prada 2",
         "creator": "David Frankel",
