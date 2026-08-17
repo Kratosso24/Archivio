@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-17T12:46:13.255Z",
+  "exportedAt": "2026-08-17T12:57:29.387Z",
   "entries": {
     "musica": [
       {
@@ -485,6 +485,22 @@
       }
     ],
     "libri": [
+      {
+        "title": "Dieci piccoli indiani",
+        "creator": "Agatha Christie",
+        "subtype": "Romanzo",
+        "genre": "Giallo",
+        "year": "1939",
+        "status": "Letto",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-08-17",
+        "notes": "",
+        "image": "",
+        "duration": "210",
+        "id": "44nieop6msx89a3o",
+        "createdAt": 1786970769253
+      },
       {
         "title": "L'alchimista",
         "creator": "Paulo Coelho",
