@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-08-24T19:58:44.600Z",
+  "exportedAt": "2026-08-29T13:51:42.155Z",
   "entries": {
     "musica": [
       {
@@ -244,6 +244,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Pecore sotto copertura",
+        "creator": "Kyle Balda",
+        "subtype": "Film",
+        "genre": "Giallo",
+        "year": "2026",
+        "status": "Visto",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-08-21",
+        "notes": "",
+        "image": "",
+        "duration": "110",
+        "id": "8ixv13oamt7nsgyd",
+        "createdAt": 1787601520597
+      },
       {
         "title": "Boris - Il film",
         "creator": "Giacomo Ciarrapico, Mattia Torre e Luca Vendruscolo",
