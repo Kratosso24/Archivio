@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-08-29T13:51:42.155Z",
+  "exportedAt": "2026-09-07T06:50:16.437Z",
   "entries": {
     "musica": [
+      {
+        "title": "Lucio Dalla",
+        "creator": "Lucio Dalla",
+        "subtype": "Album",
+        "genre": "Cantautorato",
+        "year": "1979",
+        "status": "Ascoltato",
+        "rating": 5,
+        "progress": "",
+        "date": "2026-08-29",
+        "notes": "",
+        "image": "",
+        "duration": "39",
+        "id": "s2fb8cvpmtefvpns",
+        "createdAt": 1788011498152
+      },
       {
         "title": "Effetti Personali",
         "creator": "Sergio Caputo",
