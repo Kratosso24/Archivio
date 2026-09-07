@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-09-07T06:50:16.437Z",
+  "exportedAt": "2026-09-07T06:50:25.176Z",
   "entries": {
     "musica": [
+      {
+        "title": "Help Ever Hurt Cover",
+        "creator": "Fuji Kaze",
+        "subtype": "Album",
+        "genre": "J-Pop",
+        "year": "2020",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-09-07",
+        "notes": "",
+        "image": "",
+        "duration": "33",
+        "id": "820unsaumtqvsf0o",
+        "createdAt": 1788763812360
+      },
       {
         "title": "Lucio Dalla",
         "creator": "Lucio Dalla",
