@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-09-14T00:08:35.990Z",
+  "exportedAt": "2026-09-14T00:09:30.004Z",
   "entries": {
     "musica": [
+      {
+        "title": "Help Ever Hurt Never",
+        "creator": "",
+        "subtype": "",
+        "genre": "",
+        "year": "",
+        "status": "Da ascoltare",
+        "rating": 0,
+        "progress": "",
+        "date": "",
+        "notes": "",
+        "image": "",
+        "duration": "",
+        "id": "gkax61b2mu0hitpn",
+        "createdAt": 1789344511979
+      },
       {
         "title": "Help Ever Hurt Cover",
         "creator": "Fuji Kaze",
