@@ -1,20 +1,20 @@
 {
-  "exportedAt": "2026-09-14T00:09:30.004Z",
+  "exportedAt": "2026-09-14T00:09:38.348Z",
   "entries": {
     "musica": [
       {
         "title": "Help Ever Hurt Never",
-        "creator": "",
-        "subtype": "",
-        "genre": "",
-        "year": "",
-        "status": "Da ascoltare",
-        "rating": 0,
+        "creator": "Fujii Kaze",
+        "subtype": "Album",
+        "genre": "J-pop",
+        "year": "2020",
+        "status": "Ascoltato",
+        "rating": 4,
         "progress": "",
-        "date": "",
+        "date": "2026-09-13",
         "notes": "",
         "image": "",
-        "duration": "",
+        "duration": "46",
         "id": "gkax61b2mu0hitpn",
         "createdAt": 1789344511979
       },
