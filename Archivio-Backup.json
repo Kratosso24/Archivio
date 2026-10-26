@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-10-26T16:03:26.110Z",
+  "exportedAt": "2026-10-26T16:03:57.339Z",
   "entries": {
     "musica": [
       {
@@ -308,6 +308,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Lo Stagista Inaspettato",
+        "creator": "Nancy Meyers",
+        "subtype": "Film",
+        "genre": "Commedia",
+        "year": "2015",
+        "status": "Visto",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-10-06",
+        "notes": "",
+        "image": "",
+        "duration": "121",
+        "id": "our50lcumvpg4j24",
+        "createdAt": 1793030602108
+      },
       {
         "title": "Pecore sotto copertura",
         "creator": "Kyle Balda",
