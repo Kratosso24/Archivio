@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-10-26T16:00:36.690Z",
+  "exportedAt": "2026-10-26T16:03:26.110Z",
   "entries": {
     "musica": [
+      {
+        "title": "Gore",
+        "creator": "Lous and The Yakuza",
+        "subtype": "Album",
+        "genre": "Contemporary R&B",
+        "year": "2020",
+        "status": "Ascoltato",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-10-25",
+        "notes": "",
+        "image": "",
+        "duration": "29",
+        "id": "55h3hur3mvpg0wbw",
+        "createdAt": 1793030432684
+      },
       {
         "title": "Help Ever Hurt Never",
         "creator": "Fujii Kaze",
