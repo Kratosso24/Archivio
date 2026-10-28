@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-10-28T12:03:26.087Z",
+  "exportedAt": "2026-10-28T12:03:43.882Z",
   "entries": {
     "musica": [
+      {
+        "title": "Love All Cover All",
+        "creator": "Fujii Kaze",
+        "subtype": "Album",
+        "genre": "",
+        "year": "2022",
+        "status": "Ascoltato",
+        "rating": 3,
+        "progress": "",
+        "date": "2026-10-27",
+        "notes": "",
+        "image": "",
+        "duration": "37",
+        "id": "sixj4vesmvs2fl9a",
+        "createdAt": 1793189002078
+      },
       {
         "title": "Gore",
         "creator": "Lous and The Yakuza",
