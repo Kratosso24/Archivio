@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-10-29T22:23:37.253Z",
+  "exportedAt": "2026-11-17T23:36:25.098Z",
   "entries": {
     "musica": [
+      {
+        "title": "Mignonne",
+        "creator": "Taeko Onuki",
+        "subtype": "Album",
+        "genre": "City pop",
+        "year": "1978",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-10-29",
+        "notes": "",
+        "image": "",
+        "duration": "42",
+        "id": "7puswstzmvu4100g",
+        "createdAt": 1793312612944
+      },
       {
         "title": "Love All Cover All",
         "creator": "Fujii Kaze",
