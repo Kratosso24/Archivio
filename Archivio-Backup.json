@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-11-18T09:33:12.622Z",
+  "exportedAt": "2026-11-18T09:34:43.305Z",
   "entries": {
     "musica": [
+      {
+        "title": "BE NOT AFRAID",
+        "creator": "Polyphia",
+        "subtype": "Album",
+        "genre": "EDM",
+        "year": "2026",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-11-18",
+        "notes": "",
+        "image": "",
+        "duration": "45",
+        "id": "n9xli0i2mwlxbafd",
+        "createdAt": 1794994388618
+      },
       {
         "title": "Mignonne",
         "creator": "Taeko Onuki",
