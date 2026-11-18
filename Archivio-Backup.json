@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-17T23:36:25.098Z",
+  "exportedAt": "2026-11-18T09:33:12.622Z",
   "entries": {
     "musica": [
       {
@@ -340,6 +340,22 @@
       }
     ],
     "film": [
+      {
+        "title": "Our Little Secret",
+        "creator": "Stephen Herek",
+        "subtype": "Film",
+        "genre": "Romantico",
+        "year": "2024",
+        "status": "Visto",
+        "rating": 2,
+        "progress": "",
+        "date": "2026-11-17",
+        "notes": "",
+        "image": "",
+        "duration": "101",
+        "id": "aihk11slmwlbzt5y",
+        "createdAt": 1794958581094
+      },
       {
         "title": "Lo Stagista Inaspettato",
         "creator": "Nancy Meyers",
