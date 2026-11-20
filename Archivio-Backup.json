@@ -1,7 +1,23 @@
 {
-  "exportedAt": "2026-11-20T16:27:47.209Z",
+  "exportedAt": "2026-11-20T16:28:17.963Z",
   "entries": {
     "musica": [
+      {
+        "title": "Come E' Profondo Il Mare",
+        "creator": "Lucio Dalla",
+        "subtype": "Album",
+        "genre": "Cantautorato Italiano",
+        "year": "1977",
+        "status": "Ascoltato",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-11-20",
+        "notes": "",
+        "image": "",
+        "duration": "36",
+        "id": "mvqpqjsqmwp70543",
+        "createdAt": 1795192063203
+      },
       {
         "title": "BE NOT AFRAID",
         "creator": "Polyphia",
