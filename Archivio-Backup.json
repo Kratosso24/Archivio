@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-11-18T15:28:54.772Z",
+  "exportedAt": "2026-11-20T16:27:47.209Z",
   "entries": {
     "musica": [
       {
@@ -645,6 +645,22 @@
       }
     ],
     "libri": [
+      {
+        "title": "Uno studio in rosso",
+        "creator": "Arthur Conan Doyle",
+        "subtype": "Romanzo",
+        "genre": "Giallo",
+        "year": "1887",
+        "status": "Letto",
+        "rating": 4,
+        "progress": "",
+        "date": "2026-11-06",
+        "notes": "",
+        "image": "",
+        "duration": "",
+        "id": "327p49vqmwma0q4x",
+        "createdAt": 1795015730769
+      },
       {
         "title": "Dieci piccoli indiani",
         "creator": "Agatha Christie",
